@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const displayWeatherData = (data) => {
         const weatherContainer = document.getElementById('weather-data');
         weatherContainer.innerHTML = `
-            <h2>${data.name}, ${data.sys.country}</h2>
+            <h2>${data.name}</h2>
             <p>${data.weather[0].description}</p>
             <p>Temperature: ${data.main.temp}°C</p>
             <p>Humidity: ${data.main.humidity}%</p>
